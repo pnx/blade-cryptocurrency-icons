@@ -1,0 +1,44 @@
+{
+    "name": "pnx/blade-cryptocurrency-icons",
+    "description": "A package to easily make use of Cryptoicons in your Laravel Blade views.",
+    "keywords": ["Blade", "Cryptoicons", "Laravel"],
+    "homepage": "https://github.com/pnx/blade-cryptocurrency-icons",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Henrik Hautakoski",
+            "email": "henrik.hautakoski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "blade-ui-kit/blade-icons": "^1.1",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pnx\\BladeCryptocurrencyIcons\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pnx\\BladeCryptocurrencyIcons\\BladeCryptocurrencyIconsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
